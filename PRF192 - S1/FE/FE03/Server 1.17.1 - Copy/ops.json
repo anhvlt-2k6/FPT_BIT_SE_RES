@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "be4762c2-2380-3635-aca7-e7a3463b6542",
+    "name": "StarCi",
+    "level": 2,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "6b366662-d646-3198-adb0-ed8bb295a4b5",
+    "name": "XiConLo",
+    "level": 2,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "6e3a7d45-b71c-3c92-824f-28684893dd78",
+    "name": "XiConLoVer2",
+    "level": 2,
+    "bypassesPlayerLimit": false
+  }
+]

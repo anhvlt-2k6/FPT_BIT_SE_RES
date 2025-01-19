@@ -1,0 +1,159 @@
+[00:07:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world_nether\level6683211111093263914.dat -> .\world_nether\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:07:01] [Server thread/WARN]: Failed to execute rename .\world_nether\level6683211111093263914.dat to .\world_nether\level.dat
+[00:07:01] [Server thread/ERROR]: Failed to replace .\world_nether\level.dat with .\world_nether\level6683211111093263914.dat, retrying 0/10
+[00:10:40] [Server thread/INFO]: Villager EntityVillager['Villager'/98, l='ServerLevel[world]', x=674.11, y=68.00, z=526.87] died, message: 'Villager was squished too much'
+[00:27:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world\level8232802952561908602.dat -> .\world\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:27:01] [Server thread/WARN]: Failed to execute rename .\world\level8232802952561908602.dat to .\world\level.dat
+[00:27:01] [Server thread/ERROR]: Failed to replace .\world\level.dat with .\world\level8232802952561908602.dat, retrying 0/10
+[00:27:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world_nether\level11245819626553730440.dat -> .\world_nether\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:27:01] [Server thread/WARN]: Failed to execute rename .\world_nether\level11245819626553730440.dat to .\world_nether\level.dat
+[00:27:01] [Server thread/ERROR]: Failed to replace .\world_nether\level.dat with .\world_nether\level11245819626553730440.dat, retrying 0/10
+[00:27:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world_the_end\level18298189721419566054.dat -> .\world_the_end\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:27:01] [Server thread/WARN]: Failed to execute rename .\world_the_end\level18298189721419566054.dat to .\world_the_end\level.dat
+[00:27:01] [Server thread/ERROR]: Failed to replace .\world_the_end\level.dat with .\world_the_end\level18298189721419566054.dat, retrying 0/10
+[00:57:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world\level3704116551623855772.dat -> .\world\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:57:01] [Server thread/WARN]: Failed to execute rename .\world\level3704116551623855772.dat to .\world\level.dat
+[00:57:01] [Server thread/ERROR]: Failed to replace .\world\level.dat with .\world\level3704116551623855772.dat, retrying 0/10
+[00:57:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world_nether\level4653251995791257488.dat -> .\world_nether\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[00:57:01] [Server thread/WARN]: Failed to execute rename .\world_nether\level4653251995791257488.dat to .\world_nether\level.dat
+[00:57:01] [Server thread/ERROR]: Failed to replace .\world_nether\level.dat with .\world_nether\level4653251995791257488.dat, retrying 0/10
+[01:07:01] [Server thread/ERROR]: Failed to rename
+java.nio.file.FileSystemException: .\world_nether\level17247493438192504870.dat -> .\world_nether\level.dat: The process cannot access the file because it is being used by another process
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:401) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293) ~[?:?]
+	at java.nio.file.Files.move(Files.java:1426) ~[?:?]
+	at net.minecraft.SystemUtils$2.getAsBoolean(SourceFile:528) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:593) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:603) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:637) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.SystemUtils.a(SourceFile:613) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.world.level.storage.Convertable$ConversionSession.a(Convertable.java:416) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.level.WorldServer.save(WorldServer.java:852) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.saveChunks(MinecraftServer.java:849) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1222) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1035) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:303) ~[spigot.jar:3181-Spigot-38e6c03-ed2b91c]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[01:07:01] [Server thread/WARN]: Failed to execute rename .\world_nether\level17247493438192504870.dat to .\world_nether\level.dat
+[01:07:01] [Server thread/ERROR]: Failed to replace .\world_nether\level.dat with .\world_nether\level17247493438192504870.dat, retrying 0/10
+[01:15:39] [Server thread/INFO]: Stopping the server
+[01:15:39] [Server thread/INFO]: Stopping server
+[01:15:39] [Server thread/INFO]: Saving players
+[01:15:39] [Server thread/INFO]: Saving worlds
+[01:15:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[01:15:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[01:15:39] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[01:15:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[01:15:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[01:15:39] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[01:15:39] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

@@ -1,0 +1,112 @@
+# Project: VIETNAM
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = A01.o A02.o A03.o A04.o A05.o A06.o A07.o A08.o A09.o A10.o A11.o A12.o A13.o A14.o C07.o C08.o C04.o A15.o A16.o A17.o A18.o B01.o B02.o B03.o B05.o B06.o B07.o B08.o B09.o
+LINKOBJ  = A01.o A02.o A03.o A04.o A05.o A06.o A07.o A08.o A09.o A10.o A11.o A12.o A13.o A14.o C07.o C08.o C04.o A15.o A16.o A17.o A18.o B01.o B02.o B03.o B05.o B06.o B07.o B08.o B09.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = VIETNAM.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+A01.o: A01.cpp
+	$(CPP) -c A01.cpp -o A01.o $(CXXFLAGS)
+
+A02.o: A02.cpp
+	$(CPP) -c A02.cpp -o A02.o $(CXXFLAGS)
+
+A03.o: A03.cpp
+	$(CPP) -c A03.cpp -o A03.o $(CXXFLAGS)
+
+A04.o: A04.cpp
+	$(CPP) -c A04.cpp -o A04.o $(CXXFLAGS)
+
+A05.o: A05.cpp
+	$(CPP) -c A05.cpp -o A05.o $(CXXFLAGS)
+
+A06.o: A06.cpp
+	$(CPP) -c A06.cpp -o A06.o $(CXXFLAGS)
+
+A07.o: A07.cpp
+	$(CPP) -c A07.cpp -o A07.o $(CXXFLAGS)
+
+A08.o: A08.cpp
+	$(CPP) -c A08.cpp -o A08.o $(CXXFLAGS)
+
+A09.o: A09.cpp
+	$(CPP) -c A09.cpp -o A09.o $(CXXFLAGS)
+
+A10.o: A10.cpp
+	$(CPP) -c A10.cpp -o A10.o $(CXXFLAGS)
+
+A11.o: A11.cpp
+	$(CPP) -c A11.cpp -o A11.o $(CXXFLAGS)
+
+A12.o: A12.cpp
+	$(CPP) -c A12.cpp -o A12.o $(CXXFLAGS)
+
+A13.o: A13.cpp
+	$(CPP) -c A13.cpp -o A13.o $(CXXFLAGS)
+
+A14.o: A14.cpp
+	$(CPP) -c A14.cpp -o A14.o $(CXXFLAGS)
+
+C07.o: C07.cpp
+	$(CPP) -c C07.cpp -o C07.o $(CXXFLAGS)
+
+C08.o: C08.cpp
+	$(CPP) -c C08.cpp -o C08.o $(CXXFLAGS)
+
+C04.o: C04.cpp
+	$(CPP) -c C04.cpp -o C04.o $(CXXFLAGS)
+
+A15.o: A15.cpp
+	$(CPP) -c A15.cpp -o A15.o $(CXXFLAGS)
+
+A16.o: A16.cpp
+	$(CPP) -c A16.cpp -o A16.o $(CXXFLAGS)
+
+A17.o: A17.cpp
+	$(CPP) -c A17.cpp -o A17.o $(CXXFLAGS)
+
+A18.o: A18.cpp
+	$(CPP) -c A18.cpp -o A18.o $(CXXFLAGS)
+
+B01.o: B01.cpp
+	$(CPP) -c B01.cpp -o B01.o $(CXXFLAGS)
+
+B02.o: B02.cpp
+	$(CPP) -c B02.cpp -o B02.o $(CXXFLAGS)
+
+B03.o: B03.cpp
+	$(CPP) -c B03.cpp -o B03.o $(CXXFLAGS)
+
+B05.o: B05.cpp
+	$(CPP) -c B05.cpp -o B05.o $(CXXFLAGS)
+
+B06.o: B06.cpp
+	$(CPP) -c B06.cpp -o B06.o $(CXXFLAGS)
+
+B07.o: B07.cpp
+	$(CPP) -c B07.cpp -o B07.o $(CXXFLAGS)
+
+B08.o: B08.cpp
+	$(CPP) -c B08.cpp -o B08.o $(CXXFLAGS)
+
+B09.o: B09.cpp
+	$(CPP) -c B09.cpp -o B09.o $(CXXFLAGS)
