@@ -1,6 +1,6 @@
 /*
 * This program is created by Vo Luu Tuong Anh (github.com/anhvlt-2k6)
-* It programmed as the experiment of C/C++ Standard of Clean Code for Human and Low-level Scripting (CCHLS) 
+* It programmed as the experiment of C/C++ Standard of Clean Code for Human and Low-level Scripting On-source (CCHLSS) 
 * Sponsored by TheFlightSims (https://theflightsims.com) 
 */
 
