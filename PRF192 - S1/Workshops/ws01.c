@@ -57,11 +57,17 @@ int main() {
 
 
 	// Step 5: Display the statistics
-	printf("\nStatistics:\n");
-	printf("Total score of the class: %d\n", totalScore);
-	printf("Average score of the class: %.2lf \n", (double)totalScore/numberOfStudent);
-	printf("Number of students who passed (>= 5): %d\n", passedStudents);
-	printf("Number of students who failed (< 5): %d\n", failedStudents);
+	printf(
+	"\nStatistics:\n"
+	"Total score of the class: %d\n"
+	"Average score of the class: %.2lf \n"
+	"Number of students who passed (>= 5): %d\n"
+	"Number of students who failed (< 5): %d\n",
+	totalScore,
+	(double)totalScore/numberOfStudent,
+	passedStudents,
+	failedStudents
+	);
 	
 	system("pause");
 	return 0;
