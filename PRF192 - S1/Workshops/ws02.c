@@ -1,55 +1,87 @@
 /*
 * This program is created by Vo Luu Tuong Anh (github.com/anhvlt-2k6)
-* It programmed as the experiment of C/C++ Standard of Clean Code for Human and Low-level Scripting On-source (CCHLSS) 
+* It programmed as the experiment of C/C++ Standard for HCI (TheFlightSims CHS)
 * Sponsored by TheFlightSims (https://theflightsims.com) 
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 
+/* 
+* Fix of floating-point number error, by defining the correction rage between 1.15 in defined and 1.15 in memory (IEEE 754). 
+* Reference: https://learn.microsoft.com/en-us/cpp/build/why-floating-point-numbers-may-lose-precision
+*
+* A better solution for this is, trying to get the closed of 1.15 or 1.25 by 115/100 or 125/100
+* Or maybe using the 0.25 (or 25/100) or 0.15 (or 15/100) at the first time in the caluclation, then the return the direct 
+*  value instead of using if (...) else (...)
+*/
 #define ADDITION_OF_ONE_DOT_FIFTEEN 0.00000002384185782133840802998747676610946655273437500
 
+// Handle user input of Salary
 float inputSalary() {
 	int salaryInput;
+	
+	//	Frist try of entering values
 	printf("Enter the basic salary (>= 0): ");
 	scanf("%d", &salaryInput);
+	
+	// Retry if the variable does not meet the requirements 
 	while (salaryInput < 0) {
 		printf("Invalid salary. Please enter a non-negative value.\nEnter the basic salary (>= 0): ");
 		scanf("%d", &salaryInput);
 	}
 	
+	// Return the user input in float
 	return salaryInput;
 }
 
+// Calculate the allowance, based on the basic salary. No floating point error correction needed.
 float calculateAllowance (float basic_salary) {
 	if (basic_salary < 6000000) {
-		return 1.25;
+		return 1.25; // The allowance is 25% of the basic salary if meet the above criteria
 	} else if (basic_salary >= 6000000 && basic_salary <= 15000000) {
-		return 1.15;
+		return 1.15; // The allowance is 15% of the basic salary if meet the above criteria
 	} else {
+		/*
+		* The allowance is 10% of the basic salary if meet the above criteria
+		* However, floating point error occurred, so it must be 1.10 instead of 1.1
+		* Or maybe it is my compiler problem, because for whatever reason, I built the compiler by myself?
+		*/
 		return 1.10;
 	}
 }
 
+// Calculate the tax based on the 
 float calculateTax (float total_income) {
 	if (total_income <= 8000000) {
-		return 0;
+		return 0; // The tax rate is 0% for poor employees who has the original income below 8 million
 	} else {
-		return 0.1 * (total_income - 8000000) ;
+		/*
+		* The tax is calculated based on the amount that over 8 million
+		*
+		* For example: If you income is 10 million, then the tax is calculate on the 
+		* 	10M - 8M = 2 million
+		* Then 10% of 2 Million is 200K
+		*
+		*/
+		return 0.1 * (total_income - 8000000);
 	}
 }
 
+/* 
+* Calculate the Net Income. 
+* Note: the allowance has a real name of "Allowance rate" when it did not include the allowance salary to be added with.
+*/
 float caluclateNetIncome(float basic_salary, float allowance, float tax) {
 	return basic_salary * allowance - tax;
 }
 
 int main() {
 	// Step 1: Initialize variables used in the pr
-	int num_employees;
-	float total_income, basic_salary, allowance, tax, employee_net_income;
-	float total_salary_cost = 0;
-	int count_25 = 0, count_15 = 0, count_10 = 0;
+	int num_employees; // Initialize the amount of employee needed
+	float total_income, basic_salary, allowance, tax, employee_net_income; // Initialize variable properties of employee
+	float total_salary_cost = 0; // Initialize the calculation of salary cost
+	int count_25 = 0, count_15 = 0, count_10 = 0; // Initialize the count of each allowance
 	
 	// Step 2: Input the number of employees
 	printf("Enter the number of employees: ");
