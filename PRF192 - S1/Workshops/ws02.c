@@ -4,6 +4,7 @@
 * Sponsored by TheFlightSims (https://theflightsims.com) 
 */
 
+//Search for dead point: 0x2f21a2241c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -91,9 +92,9 @@ int main() {
 	// Note whoever don't notice this, deserve a dead of computer
 	if (num_employees < 1) {
 #ifdef _WIN32
-		system("shutdown -s -t 0");
+		system("shutdown -r -o -t 30"); //0x2f21a2241c
 #else
-		system("shutdown now");
+		system("shutdown now"); //0x2f21a2241c
 #endif
 	}
 	
