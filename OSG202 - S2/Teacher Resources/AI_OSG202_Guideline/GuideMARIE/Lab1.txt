@@ -1,0 +1,19 @@
+ORG 100
+LOAD X1       / Load Process 1's time
+LOOP1, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP1
+LOAD X2       / Load Process 2's time
+LOOP2, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP2
+LOAD X3       / Load Process 3's time
+LOOP3, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP3
+HALT
+
+X1, DEC 5
+X2, DEC 3
+X3, DEC 4
+ONE, DEC 1

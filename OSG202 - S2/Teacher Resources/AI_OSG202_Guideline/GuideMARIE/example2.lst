@@ -1,0 +1,47 @@
+     Assembly listing for: example2.mas
+                Assembled: Wed Dec 04 15:25:06 ICT 2024
+
+         |         ORG 100          / Start at memory address 100
+         |                          
+100 110F |         LOAD P1          / Load the burst time of Process 1
+101 4112 |  LOOP1  SUBT ONE         / Decrement the burst time by 1
+102 8000 |         SKIPCOND 000     / If burst time is 0, exit loop
+103 9101 |         JUMP LOOP1       / Repeat until Process 1 finishes
+104 6000 |         OUTPUT           / Print completion message for Process 1
+         |                          
+105 1110 |         LOAD P2          / Load the burst time of Process 2
+106 4112 |  LOOP2  SUBT ONE         / Decrement the burst time by 1
+107 8000 |         SKIPCOND 000     / If burst time is 0, exit loop
+108 9106 |         JUMP LOOP2       / Repeat until Process 2 finishes
+109 6000 |         OUTPUT           / Print completion message for Process 2
+         |                          
+10A 1111 |         LOAD P3          / Load the burst time of Process 3
+10B 4112 |  LOOP3  SUBT ONE         / Decrement the burst time by 1
+10C 8000 |         SKIPCOND 000     / If burst time is 0, exit loop
+10D 910B |         JUMP LOOP3       / Repeat until Process 3 finishes
+10E 6000 |         OUTPUT           / Print completion message for Process 3
+         |                          
+         |                          /HALT               / Stop the program
+         |                          
+         |                          / Data Section
+10F 0005 |  P1     DEC 5            / Process 1 burst time
+110 0003 |  P2     DEC 3            / Process 2 burst time
+111 0004 |  P3     DEC 4            / Process 3 burst time
+112 0001 |  ONE    DEC 1            / Constant value 1 for decrementing
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          LOOP1  |   101   | 103
+          LOOP2  |   106   | 108
+          LOOP3  |   10B   | 10D
+          ONE    |   112   | 101, 106, 10B
+          P1     |   10F   | 100
+          P2     |   110   | 105
+          P3     |   111   | 10A
+         --------------------------------------------------
+
+

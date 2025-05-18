@@ -1,0 +1,19 @@
+ORG 100
+LOAD X2       / Load shortest process first
+LOOP1, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP1
+LOAD X3       / Load next shortest process
+LOOP2, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP2
+LOAD X1       / Load longest process last
+LOOP3, SUBT ONE
+       SKIPCOND 000
+       JUMP LOOP3
+
+
+X1, DEC 5
+X2, DEC 3
+X3, DEC 4
+ONE, DEC 1

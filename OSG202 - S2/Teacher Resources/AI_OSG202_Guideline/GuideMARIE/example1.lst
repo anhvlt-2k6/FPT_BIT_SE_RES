@@ -1,0 +1,39 @@
+     Assembly listing for: example1.mas
+                Assembled: Wed Dec 04 14:57:26 ICT 2024
+
+         |         ORG 100           
+100 110C |         LOAD X1          / Load Process 1's time
+101 410F |  LOOP1  SUBT ONE          
+102 8000 |         SKIPCOND 000      
+103 9101 |         JUMP LOOP1        
+104 110D |         LOAD X2          / Load Process 2's time
+105 410F |  LOOP2  SUBT ONE          
+106 8000 |         SKIPCOND 000      
+107 9105 |         JUMP LOOP2        
+108 110E |         LOAD X3          / Load Process 3's time
+109 410F |  LOOP3  SUBT ONE          
+10A 8000 |         SKIPCOND 000      
+10B 9109 |         JUMP LOOP3        
+         |                                        /HALT
+         |                          
+10C 0005 |  X1     DEC 5             
+10D 0003 |  X2     DEC 3             
+10E 0004 |  X3     DEC 4             
+10F 0001 |  ONE    DEC 1             
+
+Assembly successful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          LOOP1  |   101   | 103
+          LOOP2  |   105   | 107
+          LOOP3  |   109   | 10B
+          ONE    |   10F   | 101, 105, 109
+          X1     |   10C   | 100
+          X2     |   10D   | 104
+          X3     |   10E   | 108
+         --------------------------------------------------
+
+

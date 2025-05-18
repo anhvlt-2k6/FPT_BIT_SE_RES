@@ -1,0 +1,27 @@
+ORG 100            / Start at memory address 100
+
+LOAD P1            / Load the burst time of Process 1
+LOOP1, SUBT ONE    / Decrement the burst time by 1
+       SKIPCOND 000 / If burst time is 0, exit loop
+       JUMP LOOP1   / Repeat until Process 1 finishes
+OUTPUT             / Print completion message for Process 1
+
+LOAD P2            / Load the burst time of Process 2
+LOOP2, SUBT ONE    / Decrement the burst time by 1
+       SKIPCOND 000 / If burst time is 0, exit loop
+       JUMP LOOP2   / Repeat until Process 2 finishes
+OUTPUT             / Print completion message for Process 2
+
+LOAD P3            / Load the burst time of Process 3
+LOOP3, SUBT ONE    / Decrement the burst time by 1
+       SKIPCOND 000 / If burst time is 0, exit loop
+       JUMP LOOP3   / Repeat until Process 3 finishes
+OUTPUT             / Print completion message for Process 3
+
+/HALT               / Stop the program
+
+/ Data Section
+P1, DEC 5          / Process 1 burst time
+P2, DEC 3          / Process 2 burst time
+P3, DEC 4          / Process 3 burst time
+ONE, DEC 1         / Constant value 1 for decrementing

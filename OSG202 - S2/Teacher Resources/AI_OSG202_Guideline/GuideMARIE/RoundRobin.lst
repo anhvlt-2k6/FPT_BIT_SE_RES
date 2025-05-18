@@ -1,0 +1,49 @@
+     Assembly listing for: RoundRobin.mas
+                Assembled: Wed Dec 04 15:36:34 ICT 2024
+
+         |         ORG 100           
+100 1111 |         LOAD X1           
+101 4114 |         SUBT SLICE        
+102 8000 |         SKIPCOND 000      
+103 2111 |         STORE X1          
+104 910F |         JUMP CONT1        
+105 1112 |         LOAD X2           
+106 4114 |         SUBT SLICE        
+107 8000 |         SKIPCOND 000      
+108 2112 |         STORE X2          
+109 9110 |         JUMP CONT2        
+10A 1113 |         LOAD X3           
+10B 4114 |         SUBT SLICE        
+10C 8000 |         SKIPCOND 000      
+10D 2113 |         STORE X3          
+10E 9??? |         JUMP CONT3        
+   **** Operand undefined.
+         |                          
+10F 1112 |  CONT1  LOAD X2           
+         |                                  / Check remaining X2, repeat RR cycle
+110 1113 |  CONT2  LOAD X3           
+         |                                  / Continue until all processes complete
+         |                          
+         |                          
+111 0005 |  X1     DEC 5             
+112 0003 |  X2     DEC 3             
+113 0004 |  X3     DEC 4             
+114 0002 |  SLICE  DEC 2             
+115 0001 |  ONE    DEC 1             
+
+1 error found.  Assembly unsuccessful.
+
+         SYMBOL TABLE
+         --------------------------------------------------
+          Symbol | Defined | References 
+         --------+---------+-------------------------------
+          CONT1  |   10F   | 104
+          CONT2  |   110   | 109
+          ONE    |   115   | 
+          SLICE  |   114   | 101, 106, 10B
+          X1     |   111   | 100, 103
+          X2     |   112   | 105, 108, 10F
+          X3     |   113   | 10A, 10D, 110
+         --------------------------------------------------
+
+
